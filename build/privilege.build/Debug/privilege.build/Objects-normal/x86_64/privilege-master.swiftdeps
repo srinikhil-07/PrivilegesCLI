@@ -1,7 +1,0 @@
-version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
-options: "94d05704b307114d1e59cef2ccfe8fdf"
-build_time: [1584338321, 105105000]
-inputs:
-  "/Users/sri-7348/Code/Projects/privilege/privilege/main.swift": [1584270530, 76441177]
-  "/Users/sri-7348/Code/Projects/privilege/privilege/com_privilege_protocol.swift": [1584256570, 99831013]
-  "/Users/sri-7348/Code/Projects/privilege/privilege/xpcconnector.swift": [1584237433, 704743541]
