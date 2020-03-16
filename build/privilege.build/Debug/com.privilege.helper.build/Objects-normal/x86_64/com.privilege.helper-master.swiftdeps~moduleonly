@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "6eab136d9647009f41bd4f124dfaa46b"
+build_time: [1584338116, 794724000]
+inputs:
+  "/Users/sri-7348/Code/Projects/privilege/com.privilege.helper/com_privilege_helperDelegate.swift": [1584252476, 638399095]
+  "/Users/sri-7348/Code/Projects/privilege/com.privilege.helper/com_privilege_helper.swift": [1584337430, 960006975]
+  "/Users/sri-7348/Code/Projects/privilege/com.privilege.helper/main.swift": [1584338044, 690186746]
+  "/Users/sri-7348/Code/Projects/privilege/com.privilege.helper/com_privilege_protocol.swift": [1584256566, 13970877]

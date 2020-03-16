@@ -1,0 +1,417 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PrivilegeListener"
+provides-nominal:
+- "20com_privilege_helper17PrivilegeListenerC"
+- "20com_privilege_helper17PrivilegeListenerC0E5ErrorO"
+provides-member:
+- ["20com_privilege_helper17PrivilegeListenerC", ""]
+- ["20com_privilege_helper17PrivilegeListenerC0E5ErrorO", ""]
+- ["20com_privilege_helper17PrivilegeListenerC", "ListenerError"]
+provides-dynamic-lookup:
+- "changePrivilege"
+- "listener"
+- "upperCaseString"
+depends-top-level:
+- "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "Error"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "ListenerProtocol"
+- !private "NSLog"
+- "NSObject"
+- "NSXPCConnection"
+- !private "NSXPCInterface"
+- "NSXPCListener"
+- "NSXPCListenerDelegate"
+- "PrivilegeListener"
+- "String"
+- !private "StringLiteralType"
+- "Void"
+depends-member:
+- !private ["SK", "uppercased"]
+- !private ["s7CVarArgP", "ListenerError"]
+- !private ["s7CVarArgP", "ListenerProtocol"]
+- !private ["s7CVarArgP", "NSLog"]
+- !private ["s7CVarArgP", "NSXPCInterface"]
+- ["s7CVarArgP", "NSXPCListener"]
+- ["s7CVarArgP", ""]
+- ["s7CVarArgP", "changePrivilege"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "exportedInterface"]
+- !private ["s7CVarArgP", "exportedObject"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "listener"]
+- !private ["s7CVarArgP", "privilegeListener"]
+- !private ["s7CVarArgP", "resume"]
+- !private ["s7CVarArgP", "serviceStarted"]
+- !private ["s7CVarArgP", "suspend"]
+- ["s7CVarArgP", "upperCaseString"]
+- !private ["s7CVarArgP", "uppercased"]
+- !private ["Sl", "uppercased"]
+- !private ["SL", "uppercased"]
+- !private ["s28CustomDebugStringConvertibleP", "ListenerError"]
+- !private ["s28CustomDebugStringConvertibleP", "ListenerProtocol"]
+- !private ["s28CustomDebugStringConvertibleP", "NSLog"]
+- !private ["s28CustomDebugStringConvertibleP", "NSXPCInterface"]
+- ["s28CustomDebugStringConvertibleP", "NSXPCListener"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "changePrivilege"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "exportedInterface"]
+- !private ["s28CustomDebugStringConvertibleP", "exportedObject"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "listener"]
+- !private ["s28CustomDebugStringConvertibleP", "privilegeListener"]
+- !private ["s28CustomDebugStringConvertibleP", "resume"]
+- !private ["s28CustomDebugStringConvertibleP", "serviceStarted"]
+- !private ["s28CustomDebugStringConvertibleP", "suspend"]
+- ["s28CustomDebugStringConvertibleP", "upperCaseString"]
+- !private ["s28CustomDebugStringConvertibleP", "uppercased"]
+- !private ["s17CustomReflectableP", "uppercased"]
+- !private ["s23CustomStringConvertibleP", "ListenerError"]
+- !private ["s23CustomStringConvertibleP", "ListenerProtocol"]
+- !private ["s23CustomStringConvertibleP", "NSLog"]
+- !private ["s23CustomStringConvertibleP", "NSXPCInterface"]
+- ["s23CustomStringConvertibleP", "NSXPCListener"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "changePrivilege"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "exportedInterface"]
+- !private ["s23CustomStringConvertibleP", "exportedObject"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "listener"]
+- !private ["s23CustomStringConvertibleP", "privilegeListener"]
+- !private ["s23CustomStringConvertibleP", "resume"]
+- !private ["s23CustomStringConvertibleP", "serviceStarted"]
+- !private ["s23CustomStringConvertibleP", "suspend"]
+- ["s23CustomStringConvertibleP", "upperCaseString"]
+- !private ["s23CustomStringConvertibleP", "uppercased"]
+- !private ["Se", "uppercased"]
+- !private ["SE", "uppercased"]
+- ["SQ", "=="]
+- !private ["SQ", "ListenerError"]
+- !private ["SQ", "ListenerProtocol"]
+- !private ["SQ", "NSLog"]
+- !private ["SQ", "NSXPCInterface"]
+- ["SQ", "NSXPCListener"]
+- ["SQ", ""]
+- ["SQ", "_code"]
+- ["SQ", "_domain"]
+- ["SQ", "_getEmbeddedNSError"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "_userInfo"]
+- ["SQ", "changePrivilege"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "exportedInterface"]
+- !private ["SQ", "exportedObject"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "listener"]
+- !private ["SQ", "privilegeListener"]
+- !private ["SQ", "resume"]
+- !private ["SQ", "serviceAlreadyResumed"]
+- !private ["SQ", "serviceAlreadySuspended"]
+- !private ["SQ", "serviceStarted"]
+- !private ["SQ", "suspend"]
+- ["SQ", "upperCaseString"]
+- !private ["SQ", "uppercased"]
+- ["s5ErrorP", "=="]
+- ["s5ErrorP", ""]
+- ["s5ErrorP", "_code"]
+- ["s5ErrorP", "_domain"]
+- ["s5ErrorP", "_getEmbeddedNSError"]
+- ["s5ErrorP", "_rawHashValue"]
+- ["s5ErrorP", "_userInfo"]
+- ["s5ErrorP", "hash"]
+- ["s5ErrorP", "hashValue"]
+- !private ["s5ErrorP", "serviceAlreadyResumed"]
+- !private ["s5ErrorP", "serviceAlreadySuspended"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "uppercased"]
+- !private ["s32ExpressibleByStringInterpolationP", "uppercased"]
+- !private ["s26ExpressibleByStringLiteralP", "uppercased"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "uppercased"]
+- ["SH", "=="]
+- !private ["SH", "ListenerError"]
+- !private ["SH", "ListenerProtocol"]
+- !private ["SH", "NSLog"]
+- !private ["SH", "NSXPCInterface"]
+- ["SH", "NSXPCListener"]
+- ["SH", ""]
+- ["SH", "_code"]
+- ["SH", "_domain"]
+- ["SH", "_getEmbeddedNSError"]
+- ["SH", "_rawHashValue"]
+- ["SH", "_userInfo"]
+- ["SH", "changePrivilege"]
+- !private ["SH", "delegate"]
+- !private ["SH", "exportedInterface"]
+- !private ["SH", "exportedObject"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "listener"]
+- !private ["SH", "privilegeListener"]
+- !private ["SH", "resume"]
+- !private ["SH", "serviceAlreadyResumed"]
+- !private ["SH", "serviceAlreadySuspended"]
+- !private ["SH", "serviceStarted"]
+- !private ["SH", "suspend"]
+- ["SH", "upperCaseString"]
+- !private ["SH", "uppercased"]
+- !private ["s6HasherV", "combine"]
+- ["20com_privilege_helper17PrivilegeListenerC0E5ErrorO", "=="]
+- ["20com_privilege_helper17PrivilegeListenerC0E5ErrorO", "__derived_enum_equals"]
+- ["20com_privilege_helper17PrivilegeListenerC0E5ErrorO", "_code"]
+- ["20com_privilege_helper17PrivilegeListenerC0E5ErrorO", "_domain"]
+- ["20com_privilege_helper17PrivilegeListenerC0E5ErrorO", "_getEmbeddedNSError"]
+- ["20com_privilege_helper17PrivilegeListenerC0E5ErrorO", "_rawHashValue"]
+- ["20com_privilege_helper17PrivilegeListenerC0E5ErrorO", "_userInfo"]
+- ["20com_privilege_helper17PrivilegeListenerC0E5ErrorO", "deinit"]
+- ["20com_privilege_helper17PrivilegeListenerC0E5ErrorO", "hash"]
+- ["20com_privilege_helper17PrivilegeListenerC0E5ErrorO", "hashValue"]
+- ["20com_privilege_helper17PrivilegeListenerC0E5ErrorO", "serviceAlreadyResumed"]
+- ["20com_privilege_helper17PrivilegeListenerC0E5ErrorO", "serviceAlreadySuspended"]
+- !private ["20com_privilege_helper16ListenerProtocolP", "ListenerError"]
+- !private ["20com_privilege_helper16ListenerProtocolP", "ListenerProtocol"]
+- !private ["20com_privilege_helper16ListenerProtocolP", "NSLog"]
+- !private ["20com_privilege_helper16ListenerProtocolP", "NSXPCInterface"]
+- ["20com_privilege_helper16ListenerProtocolP", "NSXPCListener"]
+- ["20com_privilege_helper16ListenerProtocolP", ""]
+- ["20com_privilege_helper16ListenerProtocolP", "changePrivilege"]
+- ["20com_privilege_helper16ListenerProtocolP", "listener"]
+- !private ["20com_privilege_helper16ListenerProtocolP", "privilegeListener"]
+- !private ["20com_privilege_helper16ListenerProtocolP", "serviceStarted"]
+- ["20com_privilege_helper16ListenerProtocolP", "upperCaseString"]
+- !private ["s25LosslessStringConvertibleP", "uppercased"]
+- !private ["s10MirrorPathP", "uppercased"]
+- !private ["So8NSCodingP", "uppercased"]
+- !private ["So9NSCopyingP", "uppercased"]
+- !private ["So21NSItemProviderReadingP", "uppercased"]
+- !private ["So21NSItemProviderWritingP", "uppercased"]
+- !private ["So16NSMutableCopyingP", "uppercased"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "Error"]
+- !private ["So8NSObjectC", "ListenerError"]
+- !private ["So8NSObjectC", "ListenerProtocol"]
+- !private ["So8NSObjectC", "NSLog"]
+- ["So8NSObjectC", "NSXPCConnection"]
+- !private ["So8NSObjectC", "NSXPCInterface"]
+- ["So8NSObjectC", "NSXPCListener"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "Void"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "changePrivilege"]
+- !private ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "exportedInterface"]
+- !private ["So8NSObjectC", "exportedObject"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "listener"]
+- ["So8NSObjectC", "privilegeListener"]
+- !private ["So8NSObjectC", "resume"]
+- ["So8NSObjectC", "serviceStarted"]
+- ["So8NSObjectC", "startService"]
+- ["So8NSObjectC", "stopService"]
+- !private ["So8NSObjectC", "suspend"]
+- ["So8NSObjectC", "upperCaseString"]
+- !private ["So8NSObjectC", "uppercased"]
+- !private ["So8NSObjectP", "ListenerError"]
+- !private ["So8NSObjectP", "ListenerProtocol"]
+- !private ["So8NSObjectP", "NSLog"]
+- !private ["So8NSObjectP", "NSXPCInterface"]
+- ["So8NSObjectP", "NSXPCListener"]
+- ["So8NSObjectP", ""]
+- ["So8NSObjectP", "changePrivilege"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "exportedInterface"]
+- !private ["So8NSObjectP", "exportedObject"]
+- ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "listener"]
+- !private ["So8NSObjectP", "privilegeListener"]
+- !private ["So8NSObjectP", "resume"]
+- !private ["So8NSObjectP", "serviceStarted"]
+- !private ["So8NSObjectP", "suspend"]
+- ["So8NSObjectP", "upperCaseString"]
+- !private ["So8NSObjectP", "uppercased"]
+- !private ["So14NSSecureCodingP", "uppercased"]
+- !private ["So8NSStringC", "uppercased"]
+- !private ["So15NSXPCConnectionC", "exportedInterface"]
+- !private ["So15NSXPCConnectionC", "exportedObject"]
+- !private ["So15NSXPCConnectionC", "resume"]
+- !private ["So14NSXPCInterfaceC", "init"]
+- !private ["So13NSXPCListenerC", "delegate"]
+- ["So13NSXPCListenerC", "init"]
+- !private ["So13NSXPCListenerC", "resume"]
+- !private ["So13NSXPCListenerC", "suspend"]
+- !private ["So21NSXPCListenerDelegateP", "ListenerError"]
+- !private ["So21NSXPCListenerDelegateP", "ListenerProtocol"]
+- !private ["So21NSXPCListenerDelegateP", "NSLog"]
+- !private ["So21NSXPCListenerDelegateP", "NSXPCInterface"]
+- ["So21NSXPCListenerDelegateP", "NSXPCListener"]
+- ["So21NSXPCListenerDelegateP", ""]
+- ["So21NSXPCListenerDelegateP", "changePrivilege"]
+- ["So21NSXPCListenerDelegateP", "listener"]
+- !private ["So21NSXPCListenerDelegateP", "privilegeListener"]
+- !private ["So21NSXPCListenerDelegateP", "serviceStarted"]
+- ["So21NSXPCListenerDelegateP", "upperCaseString"]
+- !private ["So18NSXPCProxyCreatingP", "exportedInterface"]
+- !private ["So18NSXPCProxyCreatingP", "exportedObject"]
+- !private ["So18NSXPCProxyCreatingP", "resume"]
+- ["20com_privilege_helper17PrivilegeListenerC", "Bool"]
+- ["20com_privilege_helper17PrivilegeListenerC", "Error"]
+- ["20com_privilege_helper17PrivilegeListenerC", "ListenerError"]
+- !private ["20com_privilege_helper17PrivilegeListenerC", "ListenerProtocol"]
+- !private ["20com_privilege_helper17PrivilegeListenerC", "NSLog"]
+- ["20com_privilege_helper17PrivilegeListenerC", "NSXPCConnection"]
+- !private ["20com_privilege_helper17PrivilegeListenerC", "NSXPCInterface"]
+- ["20com_privilege_helper17PrivilegeListenerC", "NSXPCListener"]
+- ["20com_privilege_helper17PrivilegeListenerC", "String"]
+- ["20com_privilege_helper17PrivilegeListenerC", "Void"]
+- ["20com_privilege_helper17PrivilegeListenerC", "changePrivilege"]
+- ["20com_privilege_helper17PrivilegeListenerC", "deinit"]
+- ["20com_privilege_helper17PrivilegeListenerC", "init"]
+- ["20com_privilege_helper17PrivilegeListenerC", "listener"]
+- ["20com_privilege_helper17PrivilegeListenerC", "privilegeListener"]
+- ["20com_privilege_helper17PrivilegeListenerC", "serviceStarted"]
+- ["20com_privilege_helper17PrivilegeListenerC", "startService"]
+- ["20com_privilege_helper17PrivilegeListenerC", "stopService"]
+- ["20com_privilege_helper17PrivilegeListenerC", "upperCaseString"]
+- !private ["Sm", "uppercased"]
+- !private ["ST", "uppercased"]
+- !private ["SS", "uppercased"]
+- !private ["Sy", "uppercased"]
+- !private ["s16TextOutputStreamP", "uppercased"]
+- !private ["s20TextOutputStreamableP", "uppercased"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "uppercased"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "uppercased"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "uppercased"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "uppercased"]
+- !private ["s19_HasContiguousBytesP", "uppercased"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "uppercased"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ListenerError"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ListenerProtocol"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSLog"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSXPCInterface"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "NSXPCListener"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "changePrivilege"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "exportedInterface"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "exportedObject"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "listener"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "privilegeListener"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "serviceStarted"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "suspend"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "upperCaseString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uppercased"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ListenerError"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ListenerProtocol"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSLog"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSXPCInterface"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSXPCListener"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "changePrivilege"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "exportedInterface"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "exportedObject"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "listener"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "privilegeListener"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resume"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "serviceStarted"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "suspend"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "upperCaseString"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "uppercased"]
+- !private ["s21_ObjectiveCBridgeableP", "uppercased"]
+depends-nominal:
+- !private "SK"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- "s5ErrorP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s6HasherV"
+- "20com_privilege_helper17PrivilegeListenerC0E5ErrorO"
+- "20com_privilege_helper16ListenerProtocolP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "So15NSXPCConnectionC"
+- !private "So14NSXPCInterfaceC"
+- "So13NSXPCListenerC"
+- "So21NSXPCListenerDelegateP"
+- !private "So18NSXPCProxyCreatingP"
+- "20com_privilege_helper17PrivilegeListenerC"
+- !private "Sm"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "e8810541e2882a7a8f49b3a4fd0c2911"
