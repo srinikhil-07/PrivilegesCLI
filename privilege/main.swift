@@ -19,7 +19,7 @@ connection.resume()
 let service = connection.remoteObjectProxyWithErrorHandler { error in
     print("Error if any: \(error)")
 } as? ListenerProtocol
-service?.changePrivilege(toAdmin: false)
+service?.changePrivilege(for: "Test", toAdmin: false)
 service?.upperCaseString("hello XPC") { response in
     print("Response from XPC service:", response)
 }

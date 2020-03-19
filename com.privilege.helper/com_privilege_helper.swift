@@ -52,15 +52,25 @@ class PrivilegeListener: NSObject, NSXPCListenerDelegate, ListenerProtocol {
                 } else if !toAdmin && !userId.isMember(ofGroup: adminGroupId) {
                     NSLog("User already not admin")
                 } else {
+                    NSLog("Privilege change needed")
                     let obj = bridger.init()
-                    let csUserId = obj.getUserCSIdentity(for: userId)
-                    let csGroupId = obj.getGroupCSIdentity(for: adminGroupId)
-                    if toAdmin {
-                        CSIdentityAddMember((csUserId as! CSIdentity), (csGroupId as! CSIdentity))
+                    if let csUserId = obj.getUserCSIdentity(for: userId) {
+                        if let csGroupId = obj.getGroupCSIdentity(for: adminGroupId) {
+                            if toAdmin {
+                                NSLog("Setting admin rights to the user")
+                                CSIdentityAddMember((csUserId as! CSIdentity), (csGroupId as! CSIdentity))
+                            } else {
+                                NSLog("Stripping admin rights to the user")
+                                CSIdentityRemoveMember((csUserId as! CSIdentity), (csGroupId as! CSIdentity))
+                            }
+                            NSLog("committing the changes")
+                            CSIdentityCommit((csGroupId as! CSIdentity), nil, nil)
+                        } else {
+                            NSLog("Error in creating group identity")
+                        }
                     } else {
-                        CSIdentityRemoveMember((csUserId as! CSIdentity), (csGroupId as! CSIdentity))
+                        NSLog("Error in creating user identity ")
                     }
-                    CSIdentityCommit((csGroupId as! CSIdentity), nil, nil)
                 }
             }
         }
