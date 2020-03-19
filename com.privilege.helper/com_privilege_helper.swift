@@ -77,7 +77,7 @@ class PrivilegeListener: NSObject, NSXPCListenerDelegate, ListenerProtocol {
         
     }
     func upperCaseString(_ string: String, withReply reply: @escaping (String) -> Void) {
-        NSLog("Request received for upper casing ")
+        NSLog("Request received for upper casing - test ")
         let response = string.uppercased()
         reply(response)
     }
