@@ -13,7 +13,9 @@
 		0B890982241E20DF0080DC45 /* com_privilege_protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B55F017241E001700FE5A44 /* com_privilege_protocol.swift */; };
 		0B890983241E20E20080DC45 /* com_privilege_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C7F3E241DE2AE00008F05 /* com_privilege_helper.swift */; };
 		0B890984241E20E50080DC45 /* com_privilege_helperDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C7F34241DC32600008F05 /* com_privilege_helperDelegate.swift */; };
+		0B8AE90C241FEC0400C42A4C /* Collaboration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8AE90B241FEC0400C42A4C /* Collaboration.framework */; };
 		0BAB365B241F47E500A21DD2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAB365A241F47E500A21DD2 /* main.swift */; };
+		0BF42A2824230F200076A12F /* bridger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF42A2724230F200076A12F /* bridger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,7 +49,10 @@
 		0B75F27B241D380A005454A7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0B75F282241D382F005454A7 /* xpcconnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xpcconnector.swift; sourceTree = "<group>"; };
 		0B89097B241E20DA0080DC45 /* com.privilege.helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.privilege.helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B8AE909241FEBF100C42A4C /* bridger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridger.h; sourceTree = "<group>"; };
+		0B8AE90B241FEC0400C42A4C /* Collaboration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Collaboration.framework; path = System/Library/Frameworks/Collaboration.framework; sourceTree = SDKROOT; };
 		0BAB365A241F47E500A21DD2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0BF42A2724230F200076A12F /* bridger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bridger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8AE90C241FEC0400C42A4C /* Collaboration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +82,8 @@
 				0B3C7F34241DC32600008F05 /* com_privilege_helperDelegate.swift */,
 				0B3C7F38241DC32600008F05 /* Info.plist */,
 				0BAB365A241F47E500A21DD2 /* main.swift */,
+				0B8AE909241FEBF100C42A4C /* bridger.h */,
+				0BF42A2724230F200076A12F /* bridger.m */,
 			);
 			path = com.privilege.helper;
 			sourceTree = "<group>";
@@ -86,6 +94,7 @@
 				0B75F27A241D380A005454A7 /* privilege */,
 				0B3C7F31241DC32600008F05 /* com.privilege.helper */,
 				0B75F279241D380A005454A7 /* Products */,
+				0B8AE90A241FEC0400C42A4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +115,14 @@
 				0B75F282241D382F005454A7 /* xpcconnector.swift */,
 			);
 			path = privilege;
+			sourceTree = "<group>";
+		};
+		0B8AE90A241FEC0400C42A4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B8AE90B241FEC0400C42A4C /* Collaboration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF42A2824230F200076A12F /* bridger.m in Sources */,
 				0B890984241E20E50080DC45 /* com_privilege_helperDelegate.swift in Sources */,
 				0B890983241E20E20080DC45 /* com_privilege_helper.swift in Sources */,
 				0BAB365B241F47E500A21DD2 /* main.swift in Sources */,
@@ -354,6 +372,7 @@
 				DEVELOPMENT_TEAM = TZ824L8Y37;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = com.privilege.helper/bridger.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -366,6 +385,7 @@
 				DEVELOPMENT_TEAM = TZ824L8Y37;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = com.privilege.helper/bridger.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

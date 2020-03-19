@@ -12,6 +12,7 @@
 
 import Foundation
 import XPC
+import Collaboration
 
 class PrivilegeListener: NSObject, NSXPCListenerDelegate, ListenerProtocol {
     var privilegeListener = NSXPCListener()
@@ -43,8 +44,27 @@ class PrivilegeListener: NSObject, NSXPCListenerDelegate, ListenerProtocol {
         serviceStarted = false
         privilegeListener.suspend()
     }
-    func changePrivilege(toAdmin: Bool) {
-        NSLog("Test me")
+    func changePrivilege(for user: String,toAdmin: Bool) {
+        if let userId = CBIdentity.init(name: user, authority: .default()) {
+            if let adminGroupId = CBGroupIdentity.init(posixGID: 80, authority: .local()) {
+                if toAdmin && userId.isMember(ofGroup: adminGroupId) {
+                    NSLog("User already admin")
+                } else if !toAdmin && !userId.isMember(ofGroup: adminGroupId) {
+                    NSLog("User already not admin")
+                } else {
+                    let obj = bridger.init()
+                    let csUserId = obj.getUserCSIdentity(for: userId)
+                    let csGroupId = obj.getGroupCSIdentity(for: adminGroupId)
+                    if toAdmin {
+                        CSIdentityAddMember((csUserId as! CSIdentity), (csGroupId as! CSIdentity))
+                    } else {
+                        CSIdentityRemoveMember((csUserId as! CSIdentity), (csGroupId as! CSIdentity))
+                    }
+                    CSIdentityCommit((csGroupId as! CSIdentity), nil, nil)
+                }
+            }
+        }
+        
     }
     func upperCaseString(_ string: String, withReply reply: @escaping (String) -> Void) {
         NSLog("Request received for upper casing ")

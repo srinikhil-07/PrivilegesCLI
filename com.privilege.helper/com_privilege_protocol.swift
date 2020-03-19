@@ -9,6 +9,6 @@
 import Foundation
 
 @objc protocol ListenerProtocol {
-    func changePrivilege(toAdmin: Bool)
+    func changePrivilege(for user: String,toAdmin: Bool)
     func upperCaseString(_ string: String, withReply reply: @escaping (String) -> Void)
 }
