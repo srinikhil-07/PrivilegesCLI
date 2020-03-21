@@ -31,7 +31,7 @@ itself
 
 ## Usage
 Build both XPC helper and privileges CLI tool. 
-Step 1: Copy the com.privilge.helper XCP to /Library/PrivilegeHelper directory,
-Step 2: Load the XPC daemon plist,
-Step 3: Edit your user name in privileges CLI and its required privilege before runnig it. The user privilege should change accordingly.
+1. Copy the com.privilge.helper XCP to /Library/PrivilegeHelper directory,
+2. Load the XPC daemon plist,
+3. Edit your user name in privileges CLI and its required privilege before runnig it. The user privilege should change accordingly.
 
