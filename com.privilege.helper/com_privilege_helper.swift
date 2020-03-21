@@ -13,7 +13,11 @@
 import Foundation
 import XPC
 import Collaboration
-
+/// Class conforming to XPC listener delgate.
+///
+/// This class starts the service, listens to the requests and handles them
+/// - ToDo: 1. Handle security aspect for the requests, 2. Analyse Swift solution for CSIdentity
+///
 class PrivilegeListener: NSObject, NSXPCListenerDelegate, ListenerProtocol {
     var privilegeListener = NSXPCListener()
     var serviceStarted = false
@@ -44,6 +48,15 @@ class PrivilegeListener: NSObject, NSXPCListenerDelegate, ListenerProtocol {
         serviceStarted = false
         privilegeListener.suspend()
     }
+    /// XPC method to change privilege of the user
+    ///
+    /// This method checks if the given user doesnt have the requested privilege already.
+    /// If not the prvivilege change is handledc else remains quiet
+    ///
+    /// - Parameters:
+    ///     - user: user name string
+    ///     - toAdmin: admin/user privilege request
+    ///
     func changePrivilege(for user: String,toAdmin: Bool) {
         if let userId = CBIdentity.init(name: user, authority: .default()) {
             if let adminGroupId = CBGroupIdentity.init(posixGID: 80, authority: .local()) {
@@ -56,26 +69,32 @@ class PrivilegeListener: NSObject, NSXPCListenerDelegate, ListenerProtocol {
                     let obj = bridger.init()
                     if let csUserId = obj.getUserCSIdentity(for: userId) {
                         if let csGroupId = obj.getGroupCSIdentity(for: adminGroupId) {
+                            let csUserIdRetained = csUserId.takeUnretainedValue()
+                            let csGroupIdRetained = csGroupId.takeUnretainedValue()
                             if toAdmin {
                                 NSLog("Setting admin rights to the user")
-                                CSIdentityAddMember((csUserId as! CSIdentity), (csGroupId as! CSIdentity))
+                                CSIdentityAddMember(csGroupIdRetained,csUserIdRetained)
                             } else {
                                 NSLog("Stripping admin rights to the user")
-                                CSIdentityRemoveMember((csUserId as! CSIdentity), (csGroupId as! CSIdentity))
+                                CSIdentityRemoveMember(csGroupIdRetained, csUserIdRetained )
                             }
-                            NSLog("committing the changes")
-                            CSIdentityCommit((csGroupId as! CSIdentity), nil, nil)
-                        } else {
-                            NSLog("Error in creating group identity")
+                            if let csGroupId2 = obj.getGroupCSIdentity(for: adminGroupId) {
+                                let csGroupIdRetained2 = csGroupId2.takeUnretainedValue()
+                                NSLog("committing the changes")
+                                let status = CSIdentityCommit(csGroupIdRetained2, nil, nil)
+                                if status {
+                                    checkMembershipInAdminUser(for: user)
+                                }
+                            }
                         }
-                    } else {
-                        NSLog("Error in creating user identity ")
                     }
                 }
+            } else {
+                NSLog("Error in creating group identity")
             }
         }
-        
     }
+    /// Test method for XPC
     func upperCaseString(_ string: String, withReply reply: @escaping (String) -> Void) {
         NSLog("Request received for upper casing - test logger")
         let response = string.uppercased()
@@ -94,5 +113,16 @@ extension PrivilegeListener {
     enum ListenerError : Error {
         case serviceAlreadyResumed
         case serviceAlreadySuspended
+    }
+}
+/// Extending helper for helper methods
+extension PrivilegeListener {
+    /// Method to check group membership of a user
+    func checkMembershipInAdminUser(for user: String) {
+        if let userId = CBIdentity.init(name: user, authority: .default()) {
+        if let adminGroupId = CBGroupIdentity.init(posixGID: 80, authority: .local()) {
+            NSLog("Is user %@ member of admin? %@", user, String(describing: userId.isMember(ofGroup: adminGroupId)))
+            }
+        }
     }
 }
