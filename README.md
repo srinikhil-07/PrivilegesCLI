@@ -29,3 +29,9 @@ itself
 - [x] Test the functionality
 - [ ] Package it in PKG format
 
+## Usage
+Build both XPC helper and privileges CLI tool. 
+Step 1: Copy the com.privilge.helper XCP to /Library/PrivilegeHelper directory,
+Step 2: Load the XPC daemon plist,
+Step 3: Edit your user name in privileges CLI and its required privilege before runnig it. The user privilege should change accordingly.
+
