@@ -21,9 +21,11 @@ logged in user,
 itself
 
 ## Current Status
-1. The working XPC daemon service and a sample client invoking it code is ready,
+- [x] The working XPC daemon service and a sample client invoking it code is ready,
 
 ## TODO
-1. Add Apple's collaboration framework to XPC daemon and check if its daemon safe,
-2. In client, add Apple's argument parser Swift package to parse CLI arguments,
-3. Test the functionality
+- [x] Add Apple's collaboration framework to XPC daemon and check if its daemon safe,
+- [ ] In client, add Apple's argument parser Swift package to parse CLI arguments,
+- [x] Test the functionality
+- [ ] Package it in PKG format
+
