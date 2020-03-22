@@ -28,7 +28,7 @@ itself
 - [ ] In client, add Apple's argument parser Swift package to parse CLI arguments,
 - [x] Test the functionality
 - [ ] Package it in PKG format
-- [ ] Add security XPC daemon
+- [ ] Add security to XPC daemon
 
 ## Usage
 Build both XPC helper and privileges CLI tool. 
