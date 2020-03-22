@@ -20,25 +20,24 @@ logged in user,
 4. Uninstallation can also be done in user privilege if possible and make XPC to shut down 
 itself
 
-## Current Status
-- [x] The working XPC daemon service and a sample client invoking it code is ready,
-
 ## TODO
 - [x] Add Apple's collaboration framework to XPC daemon and check if its daemon safe,
-- [ ] In client, add Apple's argument parser Swift package to parse CLI arguments,
+- [x] In client, add Apple's argument parser Swift package to parse CLI arguments,
 - [x] Test the functionality
 - [ ] Package it in PKG format
 - [ ] Add security to XPC daemon
+- [ ] Add toggle option for specified duration to the admin privilege change
 
 ## Usage
 Build both XPC helper and privileges CLI tool. 
 1. Copy the com.privilge.helper XCP to /Library/PrivilegeHelper directory,
 2. Load the XPC daemon plist,
-3. Edit your user name in privileges CLI and its required privilege before runnig it. The user privilege should change accordingly.
+
+./privilege --user <username> --admin true
 
 ## Future Scope
 - [ ] This tool can be extended to other privlege operations while staying as user,
-- [ ] Some way to restrict only a set of users with some form of authorization (lise password etc.) to 
+- [ ] Some way to restrict only a set of users with some form of authorization (like password, codesign etc.) to 
 be able to use this tool. This will be helpful when this tool is deployed in a managed environment.
 
 Contributions are welcome.
