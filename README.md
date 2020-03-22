@@ -33,7 +33,7 @@ Build both XPC helper and privileges CLI tool.
 1. Copy the com.privilge.helper XCP to /Library/PrivilegeHelper directory,
 2. Load the XPC daemon plist,
 
-./privilege --user <username> --admin true
+./privilege --user "username" --admin true
 
 ## Future Scope
 - [ ] This tool can be extended to other privlege operations while staying as user,
