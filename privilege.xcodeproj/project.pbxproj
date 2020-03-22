@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		0B890984241E20E50080DC45 /* com_privilege_helperDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C7F34241DC32600008F05 /* com_privilege_helperDelegate.swift */; };
 		0B8AE90C241FEC0400C42A4C /* Collaboration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8AE90B241FEC0400C42A4C /* Collaboration.framework */; };
 		0BAB365B241F47E500A21DD2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAB365A241F47E500A21DD2 /* main.swift */; };
+		0BB68B19242772EC00A25F9F /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 0BB68B18242772EC00A25F9F /* ArgumentParser */; };
 		0BF42A2824230F200076A12F /* bridger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF42A2724230F200076A12F /* bridger.m */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BB68B19242772EC00A25F9F /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +143,9 @@
 			dependencies = (
 			);
 			name = privilege;
+			packageProductDependencies = (
+				0BB68B18242772EC00A25F9F /* ArgumentParser */,
+			);
 			productName = privilege;
 			productReference = 0B75F278241D380A005454A7 /* privilege */;
 			productType = "com.apple.product-type.tool";
@@ -189,6 +194,9 @@
 				Base,
 			);
 			mainGroup = 0B75F26F241D380A005454A7;
+			packageReferences = (
+				0BB68B17242772EC00A25F9F /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 0B75F279241D380A005454A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,7 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZ824L8Y37;
+				DEVELOPMENT_TEAM = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -355,7 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZ824L8Y37;
+				DEVELOPMENT_TEAM = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -367,9 +375,9 @@
 		0B890980241E20DA0080DC45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZ824L8Y37;
+				DEVELOPMENT_TEAM = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = com.privilege.helper/bridger.h;
@@ -380,9 +388,9 @@
 		0B890981241E20DA0080DC45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZ824L8Y37;
+				DEVELOPMENT_TEAM = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = com.privilege.helper/bridger.h;
@@ -421,6 +429,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0BB68B17242772EC00A25F9F /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0BB68B18242772EC00A25F9F /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BB68B17242772EC00A25F9F /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B75F270241D380A005454A7 /* Project object */;
 }
