@@ -1,3 +1,6 @@
+## Warning:
+This repo is archived and the latest tool has been moved to https://github.com/Nikhil0487/privileges-CLI
+
 # PrivilegesCLI
 A CLI tool to switch admin privileges for macOS. This is inspired from SAP's Privileges app. 
 
